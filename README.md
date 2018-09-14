@@ -1,6 +1,6 @@
 # weather-App
  
-You can see the website here:.
+You can see the website here: https://rabia-aaziz.github.io/weather-App/.
 
 A basic client-side weather app example. Uses the Open Weather Map API to request weather data.
 
