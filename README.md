@@ -20,4 +20,5 @@ To make this application, we're going to need to cover the following tools and l
 - Bootstrap (Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites).
 - Google-Font (Making the web more beautiful, fast, and open through great typography).
 - Font-awsome (Font Awesome makes it easy to add vector icons and social logos to your website.).
-![alt text](screenshots/search.png "Description goes here")
+![Screenshot](search.png)
+
