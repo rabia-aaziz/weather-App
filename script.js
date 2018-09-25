@@ -1,5 +1,8 @@
-
 function getWeather() {
+    function style(){
+         document.querySelector("body").style["background-position"] = `bottom`;
+                document.querySelector("body").style["background-attachment"] = `fixed`;
+    }
 
     document.querySelector(".info").style.display = "flex";
     const cityName = document.querySelector("input").value;
@@ -27,13 +30,15 @@ function getWeather() {
 // ---------------------------------------------------------------------------------------------
             if (time > sunrise && time < sunset) {
                 document.querySelector("body").style["background-image"] = `url(images/day.jpg)`;
-                document.querySelector("body").style["background-position"] = `bottom`;
-                document.querySelector("body").style["background-attachment"] = `fixed`;
+                style();
+//                 document.querySelector("body").style["background-position"] = `bottom`;
+//                 document.querySelector("body").style["background-attachment"] = `fixed`;
                 document.querySelector("body").style.color = `black`;
             } else {
                 document.querySelector("body").style["background-image"] = `url(images/night.png)`;
-                document.querySelector("body").style["background-position"] = `bottom` ;
-                document.querySelector("body").style["background-attachment"] = `fixed`;
+//                 document.querySelector("body").style["background-position"] = `bottom` ;
+//                 document.querySelector("body").style["background-attachment"] = `fixed`;
+                style();
                 document.querySelector("body").style.color = `white`;
             }
 
@@ -42,8 +47,9 @@ function getWeather() {
 
             document.querySelector("body").style["background-image"] = `url(images/4o4.jpg)`;
             document.querySelector("body").style[" background-size"] = ` cover`;
-            document.querySelector("body").style[" background-position"] = `bottom`;
-            document.querySelector("body").style[" background-attachement"] = `fixed`;
+//             document.querySelector("body").style[" background-position"] = `bottom`;
+//             document.querySelector("body").style[" background-attachement"] = `fixed`;
+            style();
             document.querySelector(".info").style.display = "none";
 
 
