@@ -22,5 +22,11 @@ To make this application, we're going to need to cover the following tools and l
 - Font-awsome (Font Awesome makes it easy to add vector icons and social logos to your website.).
 
 ### What does it look like?
-![mockup-en](https://github.com/rabia-aaziz/news-web/blob/master/image/news.png)
+![mockup-en](https://github.com/rabia-aaziz/weather-App/blob/master/images/weather.png)
+
+![mockup-en](https://github.com/rabia-aaziz/weather-App/blob/master/images/weather-day.png)
+
+![mockup-en](https://github.com/rabia-aaziz/weather-App/blob/master/images/weather-night.png)
+
+
 
