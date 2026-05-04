@@ -8,7 +8,8 @@ function getWeather() {
     $.ajax({
         url:
              //-------------- change appid------------
-       `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=41c17c49b57f59dca8e328d1ed408e2b&units=metric`,
+      'http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={41c17c49b57f59dca8e328d1ed408e2b}',
+       
 
 //         `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=fb7296206e736a3c4c5c1e8718503389&units=metric`,
         success: function (data) {
