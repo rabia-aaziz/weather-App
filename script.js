@@ -46,29 +46,19 @@
 
 
 // new code---―
-function getWeather() {
-    document.querySelector(".info").style.display = "flex";
+success: function (data) {
 
-    const cityName = document.getElementById("user-Input").value.trim();
+    if (data.cod === "404" || data.cod === 404) {
+        alert("City not found");
+        return;
+    }
 
-    $.ajax({
-        url: `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=fb7296206e736a3c4c5c1e8718503389&units=metric`,
+    document.querySelector(".city").innerHTML = data.name + ", " + data.sys.country;
+    document.querySelector(".temp span").innerHTML = data.main.temp;
+    document.querySelector(".description").innerHTML = data.weather[0].main;
+    document.querySelector(".min").innerHTML = data.main.temp_min;
+    document.querySelector(".max").innerHTML = data.main.temp_max;
 
-        success: function (data) {
-            document.querySelector(".city").innerHTML = data.name;
-            document.querySelector(".temp span").innerHTML = data.main.temp;
-            document.querySelector(".description").innerHTML = data.weather[0].main;
-            document.querySelector(".min").innerHTML = data.main.temp_min;
-            document.querySelector(".max").innerHTML = data.main.temp_max;
-
-            document.querySelector("#icon").innerHTML =
-            `<img class="bg-img" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">`;
-        },
-
-        error: function () {
-            alert("City not found");
-        }
-    });
+    document.querySelector("#icon").innerHTML =
+    `<img class="bg-img" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">`;
 }
-
-
